@@ -1,19 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+import { Form as BForm } from 'react-bulma-components';
 
 const Input = (props) => {
     const onChangeHandler = event => {
         props.changeValue(event.currentTarget.value)
     }
     return (
-        <>
-            <input
-                type="text"
-                value={props.result}
-                onChange={onChangeHandler}
-                readOnly
-            />
-        </>
+        <BForm.Input type="text" value={props.result} onChange={onChangeHandler} readOnly />
     )
 }
 Input.propTypes = {

@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../../components/Button';
 import PropTypes from 'prop-types';
+import { Columns } from 'react-bulma-components';
 
 const ButtonContainer = props => {
     const clickHandlerCase = (value) => {
@@ -47,33 +48,65 @@ const ButtonContainer = props => {
     }
     return (
         <>
-            <div>
-                <Button text="7" value={7} clickHandler={clickHandlerCase} />
-                <Button text="8" value={8} clickHandler={clickHandlerCase} />
-                <Button text="9" value={9} clickHandler={clickHandlerCase} />
-            </div>
-            <div>
-                <Button text="4" value={4} clickHandler={clickHandlerCase} />
-                <Button text="5" value={5} clickHandler={clickHandlerCase} />
-                <Button text="6" value={6} clickHandler={clickHandlerCase} />
-            </div>
-            <div>
-                <Button text="1" value={1} clickHandler={clickHandlerCase} />
-                <Button text="2" value={2} clickHandler={clickHandlerCase} />
-                <Button text="3" value={3} clickHandler={clickHandlerCase} />
-            </div>
-            <div>
-                <Button text="0" value={0} clickHandler={clickHandlerCase} />
-                <Button text="." value={'.'} clickHandler={clickHandlerCase} />
-                <Button text="Enter" value={'='} clickHandler={clickHandlerCase} />
-                <Button text="C" value={'clr'} clickHandler={clickHandlerCase} />
-            </div>
-            <div>
-                <Button text="/" value={'/'} clickHandler={clickHandlerCase} />
-                <Button text="*" value={'*'} clickHandler={clickHandlerCase} />
-                <Button text="-" value={'-'} clickHandler={clickHandlerCase} />
-                <Button text="+" value={'+'} clickHandler={clickHandlerCase} />
-            </div>
+            <Columns>
+                <Columns.Column>
+                    <Button text="7" value={7} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+                <Columns.Column>
+                    <Button text="8" value={8} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+                <Columns.Column>
+                    <Button text="9" value={9} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+                <Columns.Column>
+                    <Button text="/" value={'/'} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+            </Columns>
+            <Columns>
+                <Columns.Column>
+                    <Button text="4" value={4} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+                <Columns.Column>
+                    <Button text="5" value={5} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+                <Columns.Column>
+                    <Button text="6" value={6} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+                <Columns.Column>
+                    <Button text="*" value={'*'} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+            </Columns>
+            <Columns>
+                <Columns.Column>
+                    <Button text="1" value={1} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+                <Columns.Column>
+                    <Button text="2" value={2} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+                <Columns.Column>
+                    <Button text="3" value={3} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+                <Columns.Column>
+                    <Button text="-" value={'-'} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+            </Columns>
+            <Columns>
+                <Columns.Column>
+                    <Button text="0" value={0} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+                <Columns.Column>
+                    <Button text="." value={'.'} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+                <Columns.Column>
+                    <Button text="Enter" value={'='} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+                <Columns.Column>
+                    <Button text="C" value={'clr'} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+                <Columns.Column>
+                    <Button text="+" value={'+'} clickHandler={clickHandlerCase} />
+                </Columns.Column>
+            </Columns>
         </>
     )
 }
