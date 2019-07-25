@@ -1,0 +1,5 @@
+export const CHANGE_VALUE = 'CHANGE_VALUE';
+export const MEMORIZE_VALUE = 'MEMORIZE_VALUE';
+export const ACTION_VALUE = 'ACTION_VALUE';
+export const CALCULATE_VALUE = 'CALCULATE_VALUE';
+export const CLEAR_ALL = 'CLEAR_ALL';
